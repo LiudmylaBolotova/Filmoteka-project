@@ -1,0 +1,80 @@
+// -- Тема день/ночь --
+body {
+  &.night-mode {
+    background-color: $night-background-color;
+    .tumbler {
+      transform: translateX(calc(100%));
+    }
+  }
+}
+
+.footer {
+  &.night-mode {
+    background-color: $night-footer-color;
+  }
+}
+
+.wrap {
+  position: relative;
+}
+
+.tumbler-wrapper {
+  right: 25px;
+  top: 15px;
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  background-color: $black-color;
+  border-radius: 30px;
+  border: 0.2px solid $grey-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4px;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    right: 32px;
+    top: 150px;
+    width: 45px;
+    height: 25px;
+  }
+}
+
+.tumbler {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: $background-color;
+  transition: transform 0.5s, background-color 0.5s;
+  will-change: transform;
+
+  @media screen and (min-width: 768px) {
+    width: 17px;
+    height: 17px;
+  }
+}
+
+.icon-theme {
+  fill: $night-title;
+  width: 12px;
+  height: 12px;
+  @media screen and (min-width: 768px) {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.film__title-main {
+  &.night-mode {
+    color: $night-title;
+  }
+}
+
+.backdrop__modal {
+  &.night-mode {
+    background-color: $night-title;
+  }
+}
+//

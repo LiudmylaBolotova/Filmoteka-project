@@ -1,0 +1,39 @@
+{
+  "name": "filmoteka-project",
+  "version": "2.0.0",
+  "description": "",
+  "homepage": "https://LiudmylaBolotova.github.io/Filmoteka-project",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /Filmoteka-project/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiudmylaBolotova/Filmoteka-project.git"
+  },
+  "keywords": [],
+  "author": "Liudmyla Bolotova <liudmylabolotova@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LiudmylaBolotova/Filmoteka-project.git/issues"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "axios": "^0.27.2",
+    "firebase": "^9.10.0",
+    "lodash.throttle": "^4.1.1",
+    "modern-normalize": "^1.1.0",
+    "notiflix": "^3.2.5",
+    "spin.js": "^4.1.1",
+    "tui-pagination": "^3.4.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "buffer": "^6.0.3",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4",
+    "process": "^0.11.10"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}

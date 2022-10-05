@@ -1,0 +1,67 @@
+<header class="header">
+  <div class="container header-container">
+    <div class="header-nav">
+      <a class="logo link" href="/src/index.html"
+        ><svg class="icon animate__animated">
+          <use href="./images/symbol-defs.svg#icon-film"></use>
+        </svg>
+        <span class="header-title">Filmoteka</span></a
+      >
+
+      <nav>
+        <ul class="menu">
+          <li class="list menu-list">
+            <a class="link-active link" href="">home</a>
+          </li>
+          <li class="list">
+            <a class="link" href="/src/library.html">my library</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div>
+      <form class="form-field-search" id="search-form">
+        <input
+          class="input-field"
+          type="search"
+          name="searchQuery"
+          placeholder="Movie search"
+        />
+        <button class="btn-search" type="submit">
+          <svg class="icon-search">
+            <use href="./images/symbol-defs.svg#icon-search"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+
+    <!-- warning text for search -->
+    <div class="warning-container">
+      <div class="warning"></div>
+    </div>
+    <!--  -->
+    <div class="registration">
+      <ul class="list reg-list menu">
+        <li>
+          <button
+            type="button"
+            class="name-button reg-btn"
+            id="name-user"
+          ></button>
+        </li>
+        <li>
+          <button class="menu-list reg-btn" data-reg-modal-open>sign up</button>
+        </li>
+        <li>
+          <button class="reg-btn" data-auth-modal-open>sign in</button>
+        </li>
+        <li>
+          <button type="button" class="reg-btn is-hidden" id="sighout">
+            Sign out
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>

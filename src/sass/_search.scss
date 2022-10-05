@@ -1,0 +1,29 @@
+// --warning text for search--
+.warning-container {
+  position: relative;
+}
+.warning {
+  position: absolute;
+  color: $liner-color;
+  margin-top: 16px;
+  line-height: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+    left: 130px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 20px;
+    left: 380px;
+  }
+}
+
+#search-form > button > svg:hover {
+  transform: scale(1.2);
+}
+
+#search-form > input:hover,
+#search-form > input:focus {
+  box-shadow: 0 10px 10px -5px rgba(192, 56, 56, 0.767);
+}
+//
